@@ -1,8 +1,14 @@
 package models;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
 
+import java.util.Date;
+
+@MappedSuperclass
 public class BaseModel {
+    @Id
     private long id;
+    private Date createdDate;
+    private Date lastModifiedAt;
 }

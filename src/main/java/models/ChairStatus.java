@@ -1,6 +1,6 @@
 package models;
 
-public enum SeatStatus {
+public enum ChairStatus {
     FREE,
     BOOKED,
     LOCKED
