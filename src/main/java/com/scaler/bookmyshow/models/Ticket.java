@@ -16,9 +16,9 @@ public class Ticket extends BaseModel{
     private int amount;
     private Date timeOfBooking;
     @ManyToMany
-    private List<Chair> chairs;
+    private List<Seat> seats;
     @ManyToOne
-    private Event event;
+    private Show show;
     //one ticket can have multiple payments.
     //but, one payment will have one ticket
     @OneToMany

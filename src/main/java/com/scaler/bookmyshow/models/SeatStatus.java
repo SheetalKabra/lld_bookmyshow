@@ -1,6 +1,6 @@
 package com.scaler.bookmyshow.models;
 
-public enum ChairStatus {
+public enum SeatStatus {
     FREE,
     BOOKED,
     LOCKED

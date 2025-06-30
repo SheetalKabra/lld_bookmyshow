@@ -9,7 +9,7 @@ import java.util.Date;
 @Setter
 @Entity
 @Table(name="event")
-public class Event extends BaseModel{
+public class Show extends BaseModel{
     /*
         Show : Audi
         1 -> 1

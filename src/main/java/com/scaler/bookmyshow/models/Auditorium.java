@@ -12,7 +12,7 @@ import java.util.List;
 public class Auditorium extends BaseModel{
     private String name;
     @OneToMany
-    private List<Chair> chairs;
+    private List<Seat> seats;
     @Enumerated(EnumType.STRING)
     @ElementCollection
     private List<Feature> features;

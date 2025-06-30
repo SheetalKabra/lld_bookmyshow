@@ -8,10 +8,10 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class EventChairType extends BaseModel{
+public class ShowSeatType extends BaseModel{
     @ManyToOne
-    private Event event;
+    private Show show;
     @ManyToOne
-    private ChairType chairType;
+    private SeatType seatType;
     private int price;
 }

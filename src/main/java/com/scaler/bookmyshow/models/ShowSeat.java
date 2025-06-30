@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class EventChair extends BaseModel{
+public class ShowSeat extends BaseModel{
 
     /*
         ShowSeat : Show
@@ -26,7 +26,7 @@ public class EventChair extends BaseModel{
         for one show, how many showSeats obj can be there? many
      */
     @ManyToOne
-    private Event event;
+    private Show show;
 
     /*
         ShowSeat : Seat
@@ -34,7 +34,7 @@ public class EventChair extends BaseModel{
         m  <- 1
      */
     @ManyToOne
-    private Chair chair;
+    private Seat seat;
     @Enumerated(EnumType.ORDINAL)
-    private ChairStatus chairStatus;
+    private SeatStatus seatStatus;
 }
