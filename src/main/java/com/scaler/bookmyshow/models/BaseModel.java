@@ -1,4 +1,4 @@
-package models;
+package com.scaler.bookmyshow.models;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;

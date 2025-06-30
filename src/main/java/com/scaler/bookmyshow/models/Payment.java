@@ -1,4 +1,4 @@
-package models;
+package com.scaler.bookmyshow.models;
 
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
@@ -19,7 +19,6 @@ public class Payment extends BaseModel{
     private Date time;
     private String refId;
     @Enumerated(EnumType.ORDINAL)
-    @ElementCollection
     private PaymentStatus paymentStatus;
     @Enumerated(EnumType.ORDINAL)
     private PaymentType paymentType;

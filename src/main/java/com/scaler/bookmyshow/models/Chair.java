@@ -1,4 +1,4 @@
-package models;
+package com.scaler.bookmyshow.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
@@ -10,8 +10,8 @@ import lombok.Setter;
 @Entity
 public class Chair extends BaseModel{
     private String chairnumber;
-    private int rows;
-    private int cols;
+    private int rowIndex;
+    private int colNumber;
     @ManyToOne
     private ChairType chairType;
     /*
